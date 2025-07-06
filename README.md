@@ -2,7 +2,7 @@
 IDS Aprimorado (Detecção Rápida e Análise de Scan)
 
 # Descrição:
-refere-se a um Sistema de Detecção de Intrusão (IDS), projetado especificamente para identificar e analisar com alta velocidade e precisão as varreduras de rede, que são frequentemente a primeira etapa de um ciberataque.
+É um Sistema de Detecção de Intrusão (IDS), projetado especificamente para identificar e analisar com alta velocidade e precisão as varreduras de rede, que são frequentemente a primeira etapa de um ciberataque.
 As varreduras de rede, ou scans, são técnicas utilizadas por atacantes para descobrir hosts ativos, portas abertas, serviços em execução e vulnerabilidades em uma infraestrutura de TI. A detecção precoce e a análise aprofundada dessas atividades são cruciais para uma defesa proativa.
 
 # Instalação:
@@ -60,21 +60,25 @@ A Interface Gráfica
 Iniciar/Parar Captura: Use estes botões para ligar e desligar o monitoramento.
 Alertas em Tempo Real: A caixa de texto principal à esquerda exibirá todos os eventos e alertas detectados em tempo real. Alertas críticos (como um Port Scan confirmado) aparecerão em vermelho e negrito.
 Scanners Detectados: À direita, a lista "Scanners Ativos (IP)" será preenchida com os endereços de IP que demonstraram comportamento suspeito. Os IPs permanecem na lista por 2 minutos após a última atividade detectada.
-Analisar com Nmap: Selecione um IP na lista de scanners e clique no botão. O IDS executará uma varredura Nmap detalhada (-sV -T4) contra o alvo para descobrir serviços e versões, exibindo o resultado na caixa de texto "Resultado da Análise Nmap".
-Copiar Filtro Wireshark: Selecione um IP e clique aqui para copiar um filtro (ip.addr == O_IP_SELECIONADO) para sua área de transferência. Você pode colar isso diretamente no Wireshark para isolar e analisar todo o tráfego de/para aquele IP.
+
+Analisar com Nmap: Selecione um IP na lista de scanners e clique no botão. O IDS executará uma varredura Nmap detalhada contra o alvo para descobrir serviços e versões, exibindo o resultado na caixa de texto "Resultado da Análise Nmap".
+
+Copiar Filtro Wireshark: Selecione um IP e clique para copiar um filtro para sua área de transferência. Você pode colar isso diretamente no Wireshark para isolar e analisar todo o tráfego de/para aquele IP.
+
 O Arquivo de Log: MonitorIDS_log.log
 O objetivo principal do script é salvar um registro persistente de todas as atividades para análise posterior.
-No log contém
+
+No log contém:
 Alertas: Todas as mensagens que aparecem na interface, com data e hora.
+
 Resultados do Nmap: Quando você executa uma análise Nmap, o resultado completo e sem cortes é salvo no arquivo de log, delimitado por cabeçalhos para fácil identificação, isso é extremamente útil para análises forenses.
 
 # Funcionalidades:
-A funcionalidade de um Scanner IDS Aprimorado com Detecção Rápida e Análise de Scan é muito importante para: 
-Monitoramento Contínuo e Veloz: Vigia constante do tráfego de rede para identificar atividades suspeitas em tempo real.
-Identificação Precisa de Ameaças: Distinção entre atividades benignas e maliciosas com um baixo índice de falsos positivos.
-Análise Detalhada de Incidentes: Fornecimento de informações ricas e contextuais sobre as ameaças detectadas para facilitar a resposta.
-Suporte à Resposta a Incidentes: Geração de relatórios e evidências que auxiliam as equipes de segurança a neutralizar a ameaça e a fortalecer as defesas da rede.
-Um Scanner IDS Aprimorado é uma ferramenta indispensável para a segurança de sua infraestrutura digital. Ele não apenas alerta sobre possíveis invasões, mas o faz com a velocidade e a inteligência necessária para combater as ameaças cibernéticas modernas de forma eficaz.
+A funcionalidade do projeto é muito importante para: 
+1- Monitoramento Contínuo e Veloz: Vigia constante do tráfego de rede para identificar atividades suspeitas em tempo real.
+2- Identificação Precisa de Ameaças: Distinção entre atividades benignas e maliciosas com um baixo índice de falsos positivos.
+3- Análise Detalhada de Incidentes: Fornecimento de informações ricas e contextuais sobre as ameaças detectadas para facilitar a resposta.
+4- Suporte à Resposta a Incidentes: Geração de relatórios e evidências que auxiliam as equipes de segurança a neutralizar a ameaça e a fortalecer as defesas da rede.
 
 # Tecnologias usadas:
 Linguagem Python, Nmap e Wireshark
