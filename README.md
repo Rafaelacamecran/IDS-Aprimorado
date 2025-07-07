@@ -74,10 +74,13 @@ Alertas: Todas as mensagens que aparecem na interface, com data e hora.
 Resultados do Nmap: Quando você executa uma análise Nmap, o resultado completo e sem cortes é salvo no arquivo de log, delimitado por cabeçalhos para fácil identificação, isso é extremamente útil para análises forenses.
 
 # Funcionalidades:
-A funcionalidade do projeto é muito importante para: 
+A funcionalidade do projeto é muito importante para:
 1- Monitoramento Contínuo e Veloz: Vigia constante do tráfego de rede para identificar atividades suspeitas em tempo real.
+
 2- Identificação Precisa de Ameaças: Distinção entre atividades benignas e maliciosas com um baixo índice de falsos positivos.
+
 3- Análise Detalhada de Incidentes: Fornecimento de informações ricas e contextuais sobre as ameaças detectadas para facilitar a resposta.
+
 4- Suporte à Resposta a Incidentes: Geração de relatórios e evidências que auxiliam as equipes de segurança a neutralizar a ameaça e a fortalecer as defesas da rede.
 
 # Tecnologias usadas:
